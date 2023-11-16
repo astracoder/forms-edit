@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário By João Victor</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body class="bg-custom">
+    <main class="container">
+        <div class="titleForm text-center">
+            <h1 class="display-3 m-4">Your sentence matters</h1>
+        </div>
+
+        <div id="result" class="text-center">
+            <!--CODE-->
+        </div>
+
+        <form class="form-control mt-5 p-5" action="#" method="get">
+            <div class="row">
+                <div class="col">
+                    <h1 class="display-6 mb-4 pb-2">Text fields</h1>
+
+                    <label class="mb-2" for="name">Nome: </label>
+                    <input id="name" class="form-control mb-4" placeholder="Digite o seu nome..." type="text">
+
+                    <label class="mb-2" for="address">Endereço: </label>
+                    <input id="address" class="form-control mb-4" placeholder="Digite o seu endereço..." type="text">
+                </div>
+                <div class="col">
+                    <h1 class="display-6 mb-4 pb-2">Number fields</h1>
+
+                    <label class="mb-2" for="age">Sua idade: </label>
+                    <input id="age" class="form-control mb-4" placeholder="Digite a sua idade..." type="number">
+
+                    <label class="mb-2" for="ageMother">Idade mãe: </label>
+                    <input id="ageMother" class="form-control mb-4" placeholder="Digite a idade da sua mãe..." type="number">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <h1 class="display-6 mt-4 mb-4 pb-2">Checkbox fields</h1>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="Eu gosto de estudar" name="likeCheck" id="likeCheck">
+                        <label class="form-check-label" for="likeCheck">Eu gosto de estudar</label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="Eu gosto de ler livros" name="likeCheck" id="likeCheck2">
+                        <label class="form-check-label" for="likeCheck2">Eu gosto de ler livros</label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="Eu gosto de sair para festar" name="likeCheck" id="likeCheck3">
+                        <label class="form-check-label" for="likeCheck3">Eu gosto de sair para festar</label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="Eu gosto de ficar em casa" name="likeCheck" id="likeCheck4">
+                        <label class="form-check-label" for="likeCheck4">Eu gosto de ficar em casa</label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="Eu gosto de praticar exercicios" name="likeCheck" id="likeCheck5">
+                        <label class="form-check-label" for="likeCheck5">Eu gosto de praticar exercicios</label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="Eu gosto de desenvolver uma habilidade nova" name="likeCheck" id="likeCheck6">
+                        <label class="form-check-label" for="likeCheck6">Eu gosto de desenvolver uma habilidade nova</label>
+                    </div>
+                </div>
+                <div class="col">
+                    <h1 class="display-6 mt-4 mb-4 pb-2">Radio fields</h1>
+
+                    <h1 class="h6">Você se sente abençoado?</h1>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="changesRadio" id="changesRadio1" value="Sim">
+                        <label class="form-check-label" for="changesRadio1">Sim</label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="changesRadio" id="changesRadio2" value="Não">
+                        <label class="form-check-label" for="changesRadio1">Não</label>
+                    </div>
+                    </br>
+
+                    <h1 class="h6">Você queria mudar algo em sua vida?</h1>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="changesRadio1" id="changesRadio3" value="Sim">
+                        <label class="form-check-label" for="changesRadio1">Sim</label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="changesRadio1" id="changesRadio4" value="Não">
+                        <label class="form-check-label" for="changesRadio1">Não</label>
+                    </div>
+                    </br>
+
+                    <h1 class="h6">Você acha que a felicidade é algo que se conquista?</h1>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="changesRadio2" id="changesRadio5" value="Sim">
+                        <label class="form-check-label" for="changesRadio1">Sim</label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="changesRadio2" id="changesRadio6" value="Não">
+                        <label class="form-check-label" for="changesRadio1">Não</label>
+                    </div>
+                </div>
+            </div>
+            <button id="btnCta" class="mt-4 btn btn-outline-success" type="submit">Enviar</button>
+        </form>
+
+        <div class="container text-center">
+            <div class="footer">
+                <a class="btn btn-danger mt-2 mb-2" href="index.html">Atividade 1</a>
+                <a class="btn btn-danger mb-2" href="#">Atividade 2</a>
+                <a class="btn btn-danger mb-2" href="#">Atividade 3</a>
+            </div>
+        </div>
+    </main>
+
+
+
+    <script src="scripts/app.js"></script>
+</body>
+
+</html>
